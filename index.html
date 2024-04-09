@@ -31,6 +31,26 @@
 
     <script>
         /* Dados de credenciais de acesso ao firebase */
+        const firebaseConfig = {
+            apiKey: "AIzaSyC-3bibP_qbQibcO0jpZMXxbyr7q3Wwtm4",
+            authDomain: "app-libri-miguel.firebaseapp.com",
+            projectId: "app-libri-miguel",
+            storageBucket: "app-libri-miguel.appspot.com",
+            messagingSenderId: "773986157380",
+            appId: "1:773986157380:web:f67165a8ed3a38004b8d11",
+            measurementId: "G-KPNFKYWH8R"
+        };
+
+        /* inicializa o firebase na aplicação web */
+        firebase.initializeApp(firebaseConfig);
+
+        /* inicializar a conexão com o banco NOSQL FIRESTORE*/
+        const db = firebase.firestore();
+
+        /* Teste da conexão com o FIRESTORE
+        console.log('Teste de conexão com o firestore');
+        console.log(db);*/
+
     </script>
 
     <script src="app.js"></script>
